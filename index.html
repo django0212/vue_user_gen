@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div id="app">
+		<img v-bind:src="picture" v-bind:alt="firstName">
+		<h2 :class="gender">{{firstName}} {{lastName}}</h2>
+		<h3>Email: {{email}}</h3>
+		<h3>Location: {{location}}</h3>
+		<button v-on:click="getUser()">Get New User</button>
+	</div>
+
+	<script src="https://unpkg.com/vue@3.0.5"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
